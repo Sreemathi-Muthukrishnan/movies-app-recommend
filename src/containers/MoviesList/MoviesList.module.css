@@ -1,0 +1,15 @@
+.movies{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:40px auto;
+}
+.select{
+    height:20px;
+    margin-top: 38px;
+    margin-left: 10px;
+
+}
+.sort{
+    display:flex;
+    flex-wrap: wrap;
+}

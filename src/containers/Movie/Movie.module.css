@@ -1,0 +1,21 @@
+.movie{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 700px;
+    margin:20px auto;
+    background-color:rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    cursor: pointer;
+    padding: 20px;
+}
+.title{
+    color:whitesmoke;
+    font-size: 28px;
+  
+}
+.movie:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.desc{
+    padding:5px;
+}
