@@ -10,11 +10,11 @@ class MoviesList extends Component {
     this.props.onFetchMovies();
   }
   onChangeOption(e,movies){
-    if(e.target.value == '0'){ 
+    if(e.target.value == '1'){ 
        this.props.onSortMovies([...movies].sort((a, b) => (a.rank > b.rank) ? 1 : -1));
     }
         
-    if(e.target.value == '1'){
+    if(e.target.value == '0'){
      this.props.onSortMovies([...movies].sort((a, b) => (a.releaseDate > b.releaseDate) ? 1 : -1));
     }
     
@@ -30,8 +30,8 @@ class MoviesList extends Component {
           </div>
           <div>
           <select className={classes.select} onClick={(e) =>this.onChangeOption(e,this.props.movies)}>
-          <option value="0">Rank</option>
-          <option value="1">Release Date</option>
+          <option value="0">Release Date</option>
+          <option value="1">Rank</option>
           </select>
           </div> 
         </div>
