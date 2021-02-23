@@ -25,9 +25,10 @@ export const fetchMovies =() =>{
     }
 }
 
-export const sortMovies =(movies) =>{
+export const sortMovies =(e,movies) =>{
     return{
         type:actionTypes.SORT_MOVIES,
-        movies:movies
+        movies:movies,
+        e:e
     }
 }

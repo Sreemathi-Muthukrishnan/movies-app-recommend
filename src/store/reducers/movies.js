@@ -12,9 +12,17 @@ const fetchMovies =(state,action) =>{
 }
 
 const sortMovies =(state,action) =>{
+    let mov =[];
+    if(action.e == '1') { 
+        mov=[...action.movies].sort((a, b) => (a.rank > b.rank) ? 1 : -1)
+      }
+          
+     if(action.e == '0') {
+        mov=[...action.movies].sort((a, b) => (a.releaseDate > b.releaseDate) ? 1 : -1)
+     }
     return{
         ...state,
-        movies: action.movies
+        movies: mov
     }
 }
 

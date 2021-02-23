@@ -1,0 +1,10 @@
+.select{
+    height:20px;
+    margin-top: 38px;
+    margin-left: 10px;
+
+}
+.sort{
+    display:flex;
+    flex-wrap: wrap;
+}
